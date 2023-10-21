@@ -77,10 +77,10 @@
 </script>
 <?php
     include_once "menu.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/conexiondb.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/words.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/games.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/usuario.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/conexiondb.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/words.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/games.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/usuario.php";
     $oWords = new Words();
     $oWord = new Words();
     $oGames = new Games();
@@ -159,7 +159,7 @@
                 }else{
                     $oGames->insertaNivel($game_time->format("Y-m-d H:i:s"), $game_ty_id, $user_user_id, $estado);
                 }
-                $url="/nasayuwe/web/jugar.php";
+                $url="/GameNasaYuwe/nasayuwe/web/jugar.php";
                 echo ("<script>location.href='$url'</script>");
                 $listRecords = $oGames->nivel($usuario, $estado);
                 $game_ty_id = $listRecords->game_ty_id;
@@ -170,7 +170,7 @@
                 $game_ty_tiempo = $listRecords->game_ty_tiempo;
             }else if ($max_game_ty_level == $game_ty_level + 1){
                 if ($nomFoto_1 != null){
-                    $url= "/nasayuwe/php/showFoto.php?word_id=".$word_id_1;
+                    $url= "/GameNasaYuwe/nasayuwe/php/showFoto.php?word_id=".$word_id_1;
                     echo ("<script>location.href='$url'</script>");
                 }
                 $oGames->inserta($game_time->format("Y-m-d H:i:s"), $game_ty_id, $user_user_id, $estado);
@@ -183,7 +183,7 @@
                 $game_ty_puntos = $listRecords->game_ty_puntos;
                 $game_ty_records = $listRecords->game_ty_records;
                 $game_ty_tiempo = $listRecords->game_ty_tiempo;
-                $url="/nasayuwe/web/jugar.php";
+                $url="/GameNasaYuwe/nasayuwe/web/jugar.php";
                 echo ("<script>location.href='$url'</script>");
             }else{
                 $estado = $_SESSION['txtEstado'];
@@ -191,11 +191,11 @@
                 $oGames->insertaNivel($game_time->format("Y-m-d H:i:s"), $game_ty_id, $user_user_id, $estado);
                 $_SESSION['txtEstado'] = 'N';
                 if ($nomFoto_1 != null){
-                    $url= "/nasayuwe/php/showFoto.php?word_id=".$word_id_1;
+                    $url= "/GameNasaYuwe/nasayuwe/php/showFoto.php?word_id=".$word_id_1;
                     echo ("<script>location.href='$url'</script>");
                 }
                 function_alert("G A M E   F I N I S H E D . . .");
-                $url="/nasayuwe/web/jugar.php";
+                $url="/GameNasaYuwe/nasayuwe/web/jugar.php";
                 echo ("<script>location.href='$url'</script>");
             }
         }else{
@@ -209,7 +209,7 @@
             if ($max_game_ty_level < $game_ty_level + 1){
                 $oGames->insertaNivel($game_time->format("Y-m-d H:i:s"), $game_ty_id, $user_user_id, $estado);
                 function_alert("G A M E    O V E R . . .");
-                $url="/nasayuwe/web/jugar.php";
+                $url="/GameNasaYuwe/nasayuwe/web/jugar.php";
                 echo ("<script>location.href='$url'</script>");
                 $_SESSION['txtEstado'] = null;
             }
@@ -217,7 +217,7 @@
         if ($word_id_1 != $word_id_2){
             $_SESSION['txtEstado'] = 'N';
             function_alert("G A M E    O V E R . . .");
-            $url="/nasayuwe/web/jugar.php";
+            $url="/GameNasaYuwe/nasayuwe/web/jugar.php";
             echo ("<script>location.href='$url'</script>");
             
         }
@@ -238,9 +238,9 @@
   		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link href="/nasayuwe/lib_form/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/nasayuwe/lib_form/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
-        <link href="/nasayuwe/lib_form/css/demo.css" rel="stylesheet" />
+        <link href="/GameNasaYuwe/nasayuwe/lib_form/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/GameNasaYuwe/nasayuwe/lib_form/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+        <link href="/GameNasaYuwe/nasayuwe/lib_form/css/demo.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/timecircles/1.5.3/TimeCircles.min.js" integrity="sha512-FofOhk0jW4BYQ6CFM9iJutqL2qLk6hjZ9YrS2/OnkqkD5V4HFnhTNIFSAhzP3x//AD5OzVMO8dayImv06fq0jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <style>
@@ -418,8 +418,8 @@
             <input type="hidden" id="txtIdB" name="txtIdB">
         </form>
     </body>
-	<script src="/nasayuwe/lib_form/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="/nasayuwe/lib_form/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
-	<script src="/nasayuwe/lib_form/js/gsdk-bootstrap-wizard.js"></script>
-	<script src="/nasayuwe/lib_form/js/jquery.validate.min.js"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/gsdk-bootstrap-wizard.js"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/jquery.validate.min.js"></script>
 </html>

@@ -67,7 +67,7 @@
                 float: right;
                 margin-top: 35px;
                 margin-right: 35px;
-                background: url(/nasayuwe/lib_form/images/close.png) top right no-repeat;
+                background: url(/GameNasaYuwe/nasayuwe/lib_form/images/close.png) top right no-repeat;
                 display: block;
                 width: 30px;
                 height: 30px;
@@ -96,13 +96,13 @@
                 }
             }
         </style>
-        <link href="/nasayuwe/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/GameNasaYuwe/nasayuwe/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body>
         <?php
-            include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/sesion.php";
-            include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/web/wordstb.php";
+            include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/sesion.php";
+            include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/web/wordstb.php";
             $oConexion = new conexiondb();
             if(isset($_GET['word_id'])){
                 $word_id = $_GET['word_id'];
@@ -151,7 +151,7 @@
                         // When the user clicks on <span> (x), close the modal
                         span.onclick = function() { 
                             modal.style.display = "none";
-                            let url="/nasayuwe/web/jugar.php";
+                            let url="/GameNasaYuwe/nasayuwe/web/jugar.php";
                             location.href = url;
                         }
                     </script>

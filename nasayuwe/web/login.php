@@ -22,7 +22,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Iniciar Sesión</title>
-        <link href="/nasayuwe/lib_form/css_login/maxcdn.bootstrapcdn.com_bootstrap_4.1.1_css_bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link href="/GameNasaYuwe/nasayuwe/lib_form/css_login/maxcdn.bootstrapcdn.com_bootstrap_4.1.1_css_bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     </head>
     <body>
@@ -33,12 +33,12 @@
                         <div class="card" style="border-radius: 1rem;">
                             <div class="row">
                                 <div class="col-lg-5 d-none d-md-block" style="text-align:center;position: relative;transform: translateY(0%);">
-                                <img src="/nasayuwe/images/escudo.jpeg"
+                                <img src="/GameNasaYuwe/nasayuwe/images/escudo.jpeg"
                                     alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;top: 20%; position: relative;" />
                                 </div>
                                 <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                     <div class="card-body p-4 p-lg-5 text-black">
-                                        <form id="frmLogin" method="POST" action="/nasayuwe/php/login.php">
+                                        <form id="frmLogin" method="POST" action="/GameNasaYuwe/nasayuwe/php/login.php">
                                             <div class="d-flex align-items-center mb-3 pb-1">
                                                 <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
                                                 <span class="h1 fw-bold mb-0">&nbsp;Iniciar Sesión</span>

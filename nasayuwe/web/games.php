@@ -16,8 +16,8 @@
 
 <?php
     include_once "menu.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/conexiondb.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/games.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/conexiondb.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/games.php";
     $oGames = new Games();
     $game_ty_id = "";
     $game_ty_description = "";
@@ -76,9 +76,9 @@
   		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
   		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link href="/nasayuwe/lib_form/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/nasayuwe/lib_form/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
-        <link href="/nasayuwe/lib_form/css/demo.css" rel="stylesheet" />
+        <link href="/GameNasaYuwe/nasayuwe/lib_form/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/GameNasaYuwe/nasayuwe/lib_form/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+        <link href="/GameNasaYuwe/nasayuwe/lib_form/css/demo.css" rel="stylesheet" />
         <style type="text/css">
             #popup {
                 position: absolute;
@@ -109,7 +109,7 @@
                             <form class="contact-form" method="POST" name="frmWords" action="" enctype="multipart/form-data" class="mb-3">
                                 <div class="logo-container">
                                     <div class="col-sm-5 col-sm-offset-1">
-                                        <img style="height:50px;" src="/nasayuwe/images/escudo.jpeg">
+                                        <img style="height:50px;" src="/GameNasaYuwe/nasayuwe/images/escudo.jpeg">
                                     </div>
                                 </div>
                                 <div class="wizard-header" style="color:#3d6bbd;">
@@ -188,9 +188,9 @@
             </div>
         </div>
     </body>
-	<script src="/nasayuwe/lib_form/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-	<script src="/nasayuwe/lib_form/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="/nasayuwe/lib_form/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
-	<script src="/nasayuwe/lib_form/js/gsdk-bootstrap-wizard.js"></script>
-	<script src="/nasayuwe/lib_form/js/jquery.validate.min.js"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/gsdk-bootstrap-wizard.js"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/jquery.validate.min.js"></script>
 </html>

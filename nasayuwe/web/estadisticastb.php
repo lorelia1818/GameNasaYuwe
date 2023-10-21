@@ -1,6 +1,6 @@
 <?php
     include_once "menu.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/games.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/games.php";
     $oGames = new Games();
 ?>
 <style>
@@ -56,16 +56,16 @@ div.dt-buttons {
     <title>Games</title>
     <!-- Bootstrap core JavaScript -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
-    <script type="text/javascript" src="/nasayuwe/js/jquery_3.3.1_jquery.min.js"></script>
-    <script type="text/javascript" src="/nasayuwe/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="/nasayuwe/js/cdn.datatables.net_buttons_1.5.6_js_dataTables.buttons.min.js"></script>
-    <script type="text/javascript" src="/nasayuwe/js/cdnjs.cloudflare.com_ajax_libs_jszip_3.1.3_jszip.min.js"></script>
-    <script type="text/javascript" src="/nasayuwe/js/cdnjs.cloudflare.com_ajax_libs_pdfmake_0.1.53_pdfmake.min.js"></script>
-    <script type="text/javascript" src="/nasayuwe/js/cdn.datatables.net_buttons_1.5.6_js_buttons.html5.min.js"></script>
-    <link href="/nasayuwe/css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="/GameNasaYuwe/nasayuwe/js/jquery_3.3.1_jquery.min.js"></script>
+    <script type="text/javascript" src="/GameNasaYuwe/nasayuwe/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/GameNasaYuwe/nasayuwe/js/cdn.datatables.net_buttons_1.5.6_js_dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="/GameNasaYuwe/nasayuwe/js/cdnjs.cloudflare.com_ajax_libs_jszip_3.1.3_jszip.min.js"></script>
+    <script type="text/javascript" src="/GameNasaYuwe/nasayuwe/js/cdnjs.cloudflare.com_ajax_libs_pdfmake_0.1.53_pdfmake.min.js"></script>
+    <script type="text/javascript" src="/GameNasaYuwe/nasayuwe/js/cdn.datatables.net_buttons_1.5.6_js_buttons.html5.min.js"></script>
+    <link href="/GameNasaYuwe/nasayuwe/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="/nasayuwe/css/cdn.datatables.net_buttons_1.5.6_css_buttons.dataTables.min.css" />
-    <script type="text/javascript" src="/nasayuwe/js/cdn.datatables.net_buttons_1.5.6_js_buttons.flash.min.js"></script>
+    <link rel="stylesheet" href="/GameNasaYuwe/nasayuwe/css/cdn.datatables.net_buttons_1.5.6_css_buttons.dataTables.min.css" />
+    <script type="text/javascript" src="/GameNasaYuwe/nasayuwe/js/cdn.datatables.net_buttons_1.5.6_js_buttons.flash.min.js"></script>
   </head>
   <body>
     <!-- Navigation -->
@@ -120,7 +120,7 @@ div.dt-buttons {
             'serverSide': true,
             'serverMethod': 'post',
             'ajax': {
-            'url':'/nasayuwe/php/estadisticasdb.php',
+            'url':'/GameNasaYuwe/nasayuwe/php/estadisticasdb.php',
             error: function(jqXHR, ajaxOptions, thrownError) {
               alert(thrownError + "\r\n" + jqXHR.statusText + "\r\n" + jqXHR.responseText + "\r\n" + ajaxOptions.responseText);
             }
@@ -148,7 +148,7 @@ div.dt-buttons {
                   className: "addNewPrincipal",
                   text: '<i style="font-weight:bold;font-size:28px; color:#000;" class="fa fa-home fa-x5"></i>',
                   action: function ( e, dt, node, config ) {
-                    window.location = '/nasayuwe/web/principal.php';
+                    window.location = '/GameNasaYuwe/nasayuwe/web/principal.php';
                   }
                 }
             ],

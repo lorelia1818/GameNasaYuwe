@@ -1,5 +1,5 @@
 <?php
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/sesion.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/sesion.php";
 
     class Words extends Sesion
     {

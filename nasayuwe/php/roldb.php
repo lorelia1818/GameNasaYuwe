@@ -1,7 +1,7 @@
 <?php
    // Database Connection
    session_start();
-   include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/usuario.php";
+   include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/usuario.php";
    $oConexion = new conexiondb();
 
    // Reading value

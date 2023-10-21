@@ -1,7 +1,7 @@
 <?php
     include_once "menu.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/conexiondb.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/usuario.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/conexiondb.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/usuario.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -16,11 +16,11 @@
 	<!--     Fonts and icons     -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<!-- CSS Files -->
-    <link href="/nasayuwe/lib_form/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="/nasayuwe/lib_form/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+    <link href="/GameNasaYuwe/nasayuwe/lib_form/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/GameNasaYuwe/nasayuwe/lib_form/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link href="/nasayuwe/lib_form/css/demo.css" rel="stylesheet" />
+	<link href="/GameNasaYuwe/nasayuwe/lib_form/css/demo.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -151,14 +151,14 @@
 </body>
 
 	<!--   Core JS Files   -->
-	<script src="/nasayuwe/lib_form/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-	<script src="/nasayuwe/lib_form/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="/nasayuwe/lib_form/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
 
 	<!--  Plugin for the Wizard -->
-	<script src="/nasayuwe/lib_form/js/gsdk-bootstrap-wizard.js"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/gsdk-bootstrap-wizard.js"></script>
 
 	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
-	<script src="/nasayuwe/lib_form/js/jquery.validate.min.js"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/jquery.validate.min.js"></script>
 
 </html>

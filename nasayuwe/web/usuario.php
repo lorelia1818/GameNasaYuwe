@@ -6,9 +6,9 @@
 
 <?php
     include_once "menu.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/conexiondb.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/usuario.php";
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/rol.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/conexiondb.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/usuario.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/rol.php";
     $oUsuario = new Usuarios();
     $oRol = new Roles();
     $user_id = "";
@@ -70,11 +70,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
 	<!-- CSS Files -->
-    <link href="/nasayuwe/lib_form/css/bootstrap.min.css" rel="stylesheet" />
-	<link href="/nasayuwe/lib_form/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+    <link href="/GameNasaYuwe/nasayuwe/lib_form/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/GameNasaYuwe/nasayuwe/lib_form/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link href="/nasayuwe/lib_form/css/demo.css" rel="stylesheet" />
+	<link href="/GameNasaYuwe/nasayuwe/lib_form/css/demo.css" rel="stylesheet" />
 
     <style type="text/css">
         #popup {
@@ -106,7 +106,7 @@
                         <form class="contact-form" method="POST" name="frmUsuarios" action="">
                             <div class="logo-container">
                                 <div class="col-sm-5 col-sm-offset-1">
-                                    <img style="height:50px;" src="/nasayuwe/images/escudo.jpeg">
+                                    <img style="height:50px;" src="/GameNasaYuwe/nasayuwe/images/escudo.jpeg">
                                 </div>
                             </div>
                             <div class="wizard-header" style="color:#3d6bbd;">
@@ -203,14 +203,14 @@
     </div>
 </body>
 	<!--   Core JS Files   -->
-	<script src="/nasayuwe/lib_form/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-	<script src="/nasayuwe/lib_form/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="/nasayuwe/lib_form/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
 
 	<!--  Plugin for the Wizard -->
-	<script src="/nasayuwe/lib_form/js/gsdk-bootstrap-wizard.js"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/gsdk-bootstrap-wizard.js"></script>
 
 	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
-	<script src="/nasayuwe/lib_form/js/jquery.validate.min.js"></script>
+	<script src="/GameNasaYuwe/nasayuwe/lib_form/js/jquery.validate.min.js"></script>
 
 </html>

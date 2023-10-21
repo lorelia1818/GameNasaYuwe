@@ -1,7 +1,7 @@
 <?php include "header.php" ?>
 <div class="container py-3" style="background-color: #3d6bbd;">
     <div class="container h-75" style="background-color: #3d6bbd;">
-        <h1 style="background-color: #3d6bbd;color:#ffffff" class="text-center">Ingreso a Nasa Yuwe</h1>
+        <h1 style="background-color: #3d6bbd;color:#ffffff" class="text-center">Bienvenido a el juego de palabras Nasa Yuwe</h1>
     </div>
     <div class="row d-flex justify-content-center align-items-center h-75" style="background-color: #3d6bbd;">
         <div class="col">

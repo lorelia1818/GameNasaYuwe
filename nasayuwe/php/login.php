@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/usuario.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/usuario.php";
     $oUsuarios = new Usuarios();
     if (!empty($_POST)) {
         $response = null;
@@ -11,13 +11,13 @@
         if ($oUsuarios->login($usuario, $lPassC) == 200) {
             $_SESSION['txtUsuario'] = $usuario;
             $_SESSION['txtEstado'] = null;
-            header("Location: /nasayuwe/web/principal.php");
+            header("Location: /GameNasaYuwe/nasayuwe/web/principal.php");
         } else {
             //echo $lPassC;
-            header("Location: /nasayuwe/web/login.php?c=401");
+            header("Location: /GameNasaYuwe/nasayuwe/web/login.php?c=401");
         }
     }else{
         // Añade aquí el código que desees en el caso de que la validación no sea correcta o muestra
-        header("Location: /nasayuwe/web/login.php?c=402");
+        header("Location: GameNasaYuwe/nasayuwe/web/login.php?c=402");
     }
 ?>

@@ -1,5 +1,5 @@
 <?php
-    include_once $_SERVER["DOCUMENT_ROOT"] . "/nasayuwe/php/conexiondb.php";
+    include_once $_SERVER["DOCUMENT_ROOT"] . "/GameNasaYuwe/nasayuwe/php/conexiondb.php";
     class Sesion extends conexionDB{
         const SESION_INIT = TRUE;
         const SESION_NO_INIT = FALSE;
