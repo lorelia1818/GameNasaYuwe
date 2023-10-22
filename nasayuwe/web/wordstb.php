@@ -150,7 +150,7 @@ div.dt-buttons {
                 className: 'dt-center', data: 'null',
                 render: function (data, type, row) {
                   if (row.nomFoto != '' && row.nomFoto != null) {
-                    return '<a href="/GameNasaYuwe/nasayuwe/php/showFotos.php?word_id='+row.word_id+'" data-tip="Visualizar"><i class="fa fa-download" style="font-size:20px"></i></a>';
+                    return '<a href="/GameNasaYuwe/nasayuwe/php/showFoto.php?word_id='+row.word_id+'" data-tip="Visualizar"><i class="fa fa-download" style="font-size:20px"></i></a>';
                   }else{
                     return '<font style="font-family:Calibri; font-size:12pt"></font>';
                   }
@@ -165,7 +165,7 @@ div.dt-buttons {
             ],
             dom: 'lBtp',
             buttons: [
-                'excel',  'pdf',
+                'excel', 
                 {
                   className: "addNewWord",
                   text: '<i style="font-weight:bold;font-size:28px; color:#CB1100;" class="fa fa-plus-circle fa-x5"></i>',

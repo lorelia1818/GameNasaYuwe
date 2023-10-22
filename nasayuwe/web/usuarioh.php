@@ -106,7 +106,7 @@
                         <form class="contact-form" method="POST" name="frmUsuarios" action="">
                             <div class="logo-container">
                                 <div class="col-sm-5 col-sm-offset-1">
-                                    <img style="height:50px;" src="/nasayuwe/images/escudo.jpeg">
+                                    <img style="height:50px;" src="/GameNasaYuwe/nasayuwe/images/escudo.jpeg">
                                 </div>
                             </div>
                             <div class="wizard-header" style="color:#3d6bbd;">

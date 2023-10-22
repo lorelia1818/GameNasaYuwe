@@ -163,7 +163,7 @@ div.dt-buttons {
             ],
             dom: 'lBtp',
             buttons: [
-                'excel',  'pdf',
+                'excel', 
                 {
                   className: "addNewGame",
                   text: '<i style="font-weight:bold;font-size:28px; color:#CB1100;" class="fa fa-plus-circle fa-x5"></i>',

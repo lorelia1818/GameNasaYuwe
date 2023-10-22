@@ -18,6 +18,6 @@
         }
     }else{
         // Añade aquí el código que desees en el caso de que la validación no sea correcta o muestra
-        header("Location: GameNasaYuwe/nasayuwe/web/login.php?c=402");
+        header("Location: /GameNasaYuwe/nasayuwe/web/login.php?c=402");
     }
 ?>

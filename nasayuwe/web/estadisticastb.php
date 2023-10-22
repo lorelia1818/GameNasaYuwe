@@ -143,7 +143,7 @@ div.dt-buttons {
             ],
             dom: 'lBtp',
             buttons: [
-                'excel',  'pdf',
+                'excel', 
                 {
                   className: "addNewPrincipal",
                   text: '<i style="font-weight:bold;font-size:28px; color:#000;" class="fa fa-home fa-x5"></i>',

@@ -151,7 +151,7 @@
                         // When the user clicks on <span> (x), close the modal
                         span.onclick = function() { 
                             modal.style.display = "none";
-                            let url="/GameNasaYuwe/nasayuwe/web/wordstb.php";
+                            let url="/GameNasaYuwe/nasayuwe/web/jugar.php";
                             location.href = url;
                         }
                     </script>

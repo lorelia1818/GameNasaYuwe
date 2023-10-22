@@ -113,6 +113,7 @@
     }else if ($_SESSION['txtEstado'] == 'N'){
         $listRecords = $oGames->nivelMinimo($usuario);
     }else if ($_SESSION['txtEstado'] == null){
+        $_SESSION['txtEstado'] = 'N';
         $listRecords = $oGames->nivelMinimo($usuario);
     }else{
         $listRecords = $oGames->nivel($usuario, $_SESSION['txtEstado']);
@@ -170,7 +171,7 @@
                 $game_ty_tiempo = $listRecords->game_ty_tiempo;
             }else if ($max_game_ty_level == $game_ty_level + 1){
                 if ($nomFoto_1 != null){
-                    $url= "/GameNasaYuwe/nasayuwe/php/showFoto.php?word_id=".$word_id_1;
+                    $url= "/GameNasaYuwe/nasayuwe/php/showFotos.php?word_id=".$word_id_1;
                     echo ("<script>location.href='$url'</script>");
                 }
                 $oGames->inserta($game_time->format("Y-m-d H:i:s"), $game_ty_id, $user_user_id, $estado);
@@ -191,7 +192,7 @@
                 $oGames->insertaNivel($game_time->format("Y-m-d H:i:s"), $game_ty_id, $user_user_id, $estado);
                 $_SESSION['txtEstado'] = 'N';
                 if ($nomFoto_1 != null){
-                    $url= "/GameNasaYuwe/nasayuwe/php/showFoto.php?word_id=".$word_id_1;
+                    $url= "/GameNasaYuwe/nasayuwe/php/showFotos.php?word_id=".$word_id_1;
                     echo ("<script>location.href='$url'</script>");
                 }
                 function_alert("G A M E   F I N I S H E D . . .");
@@ -232,7 +233,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>My Drag-and-Drop juego</title>
+        <title>Juego de Palabras Nasayuwe</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
